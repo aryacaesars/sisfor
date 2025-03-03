@@ -44,19 +44,6 @@ export default function TaskList() {
     dispatch(Actions.deleteTask(id))
   }
 
-  const getPriorityIcon = (priority) => {
-    switch (priority) {
-      case "high":
-        return <AlertCircle className="h-4 w-4 text-red-500" />
-      case "medium":
-        return <Clock className="h-4 w-4 text-amber-500" />
-      case "low":
-        return <Clock className="h-4 w-4 text-green-500" />
-      default:
-        return null
-    }
-  }
-
   const getPriorityBadge = (priority) => {
     switch (priority) {
       case "high":
